@@ -7,17 +7,17 @@ exiftool <bild.png>
 
 ## Scan
 ### Nmap
-  nmap -A -p 22,80,443 "ip"
-  nmap --script vuln -p 22,80,443 "ip"
+    nmap -A -p 22,80,443 "ip"
+    nmap --script vuln -p 22,80,443 "ip"
 ### nikto
-  nikto -h http://"ip"/ -nossl
+    nikto -h http://"ip"/ -nossl
 ### Directory scan
-  dirb http://"ip"
+    dirb http://"ip"
 ### Wordpress scan
-  wpscan --url http://"ip"/ -et -ep -eu 
-  wpscan --url http://<ip>/ --wp-content-dir -et -ep -eu
+    wpscan --url http://"ip"/ -et -ep -eu 
+    wpscan --url http://<ip>/ --wp-content-dir -et -ep -eu
 Bruteforcing wordpress:
-  wpscan --url http://<ip>/ --wp-content-dir -eu -P "file".dic
+    wpscan --url http://<ip>/ --wp-content-dir -eu -P "file".dic
 
 ## asdf
   ### hashcat
