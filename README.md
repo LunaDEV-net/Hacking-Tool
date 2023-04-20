@@ -16,7 +16,14 @@ dirb http://"ip"
 ### Wordpress scan
 wpscan --url http://"ip"/ -et -ep -eu // wpscan --url http://<ip>/ --wp-content-dir -et -ep -eu
 Bruteforcing wordpress:
-  wpscan --url http://<ip>/ --wp-content-dir -eu -P "file".dic
+wpscan --url http://<ip>/ --wp-content-dir -eu -P "file".dic
+
+## asdf
+  ### hashcat
+    hashcat -m 0 "hash" ~/Desktop/rockyou.txt //
+    hashcat -m 0 "hash" ~/Desktop/rockyou.txt --show
+
+
   
 ## Else
 
