@@ -7,16 +7,16 @@ exiftool <bild.png>
 
 ## Scan
 ### Nmap
-scans ports on a server
+    scans ports on a server
     nmap -A -p 22,80,443 <ip>
     nmap --script vuln -p 22,80,443 <ip>
 ### nikto
-scans /xyz
+    scans /xyz
     nikto -h http://<ip>/ -nossl
 ### Directory scan
     dirb http://<ip>
 ### Wordpress scan
-scans Wordpress sites
+    scans Wordpress sites
     wpscan --url http://<ip>/ -et -ep -eu 
     wpscan --url http://<ip>/ --wp-content-dir -et -ep -eu
     Bruteforcing wordpress:
@@ -24,7 +24,7 @@ scans Wordpress sites
 
 ## asdf
   ### hashcat
-  Cracks hash
+    Cracks hash
     hashcat -m 0 <hash> ~/Desktop/rockyou.txt //
     hashcat -m 0 <hash> ~/Desktop/rockyou.txt --show
 
