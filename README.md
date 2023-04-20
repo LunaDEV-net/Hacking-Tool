@@ -11,9 +11,11 @@ nmap -A -p 22,80,443 "ip"
 nmap --script vuln -p 22,80,443 "ip"
 ### nikto
 nikto -h http://"ip"/ -nossl
-## Directory scan
+### Directory scan
 dirb http://"ip"
-
+### Wordpress scan
+wpscan --url http://"ip"/ -et -ep -eu // wpscan --url http://<ip>/ --wp-content-dir -et -ep -eu
+  
 ## Else
 
 #### Sort file and remove duplication
