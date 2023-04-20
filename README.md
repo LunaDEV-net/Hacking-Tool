@@ -39,7 +39,9 @@ scans Wordpress sites
 
 
 ## Else
-
+### Files
+#### download
+    wget <url>
 #### Sort file and remove duplication
     sort <file> | uniq > sort_<file>
     wc -l sort_<file>
