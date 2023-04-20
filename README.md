@@ -40,10 +40,12 @@ exiftool <bild.png>
 	python -c 'import pty;pty.spawn("/bin/bash");'
 
 
-## Else
-### Files
-#### download
+## root
+### loking for files you can execute
+	find / -perm -u=s -type f 2>/dev/null
+## Files
+### download
     wget <url>
-#### Sort file and remove duplication
+### Sort file and remove duplication
     sort <file> | uniq > sort_<file>
     wc -l sort_<file>
