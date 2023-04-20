@@ -29,5 +29,5 @@ Bruteforcing wordpress:
 ## Else
 
 #### Sort file and remove duplication
-        sort "file" | uniq > sort_"file"
-        wc -l sort_"file"
+       sort "file" | uniq > sort_"file"
+       wc -l sort_"file"
