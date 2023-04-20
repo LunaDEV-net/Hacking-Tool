@@ -15,6 +15,8 @@ nikto -h http://"ip"/ -nossl
 dirb http://"ip"
 ### Wordpress scan
 wpscan --url http://"ip"/ -et -ep -eu // wpscan --url http://<ip>/ --wp-content-dir -et -ep -eu
+Bruteforcing wordpress:
+  wpscan --url http://<ip>/ --wp-content-dir -eu -P fsocity.dic
   
 ## Else
 
