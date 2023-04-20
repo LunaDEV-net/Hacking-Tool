@@ -11,6 +11,8 @@ nmap -A -p 22,80,443 "ip"
 nmap --script vuln -p 22,80,443 "ip"
 ### nikto
 nikto -h http://"ip"/ -nossl
+## Directory scan
+dirb http://"ip"
 
 ## Else
 
